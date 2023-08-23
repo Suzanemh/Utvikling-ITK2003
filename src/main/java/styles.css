@@ -172,6 +172,12 @@ kode snutt
     flex-wrap: wrap;
 }
 
+/* Stil for rulling av koden */
+.code-scroll {
+    max-height: 300px; /* Juster denne verdien etter behov */
+    overflow-y: auto;
+}
+
 
 
 
