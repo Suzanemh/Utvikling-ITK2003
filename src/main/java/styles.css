@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul, li {
 /* Generelle stiler */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 .container {
@@ -29,21 +29,42 @@ header {
 h1 {
     margin-bottom: 10px;
     font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
 }
 
 h2 {
     margin-top: 20px;
     font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
 }
 
 h3 {
     margin-top: 10px;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
 }
 
 p {
     margin-top: 10px;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+
 }
 
 ul {
@@ -177,6 +198,8 @@ kode snutt
     max-height: 300px; /* Juster denne verdien etter behov */
     overflow-y: auto;
 }
+
+
 
 
 
