@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    />
+</head>
+<body>
+<nav class="Navbar">
+    <div class="Logo">
+        <a href="javalogo.html"><img src="img/java.png" alt="Logo"></a>
+    </div>
+    <ul id="Navbar-ul">
+        <li><a class="Navbar-Links" href="ressurs.html">Ressurs</a></li>
+        <li><a class="Navbar-Links" href="generellInfo.html">Generell info</a></li>
+    </ul>
+    <img id="Navbar-Drop-Down" src="img/three-horizontal-lines.svg" alt="">
+</nav>
+
+<main>
+    <section id="uke34">
+       <h1>Oppstartsuke med elever. Denne timen gikk til å bli kjent med elevene, deretter gi de en oppgave som går ut på å lage e enkel kalkulator.</h1>
+        <h2>Enkel kalkulator</h2>
+        <p>Skriv et Java-program som tar inn to tall fra brukeren og utfører en av de fire
+            grunnleggende regneoperasjonene
+            (addisjon, subtraksjon, multiplikasjon eller divisjon) på tallene.
+            Programmet skal deretter skrive ut resultatet.</p>
+
+
+        <div class="container-accessibility">
+            <pre>
+                <code class="language-html">
+                    # -*- coding: utf-8 -*-
+
+def main():
+    num1 = float(input(&quot;Skriv inn det f&oslash;rste tallet: &quot;))
+    operator = input(&quot;Skriv inn operat&oslash;ren (+, -, *, /): &quot;)
+    num2 = float(input(&quot;Skriv inn det andre tallet: &quot;))
+
+    if operator == &quot;+&quot;:
+        result = num1 + num2
+    elif operator == &quot;-&quot;:
+        result = num1 - num2
+    elif operator == &quot;*&quot;:
+        result = num1 * num2
+    elif operator == &quot;/&quot;:
+        result = num1 / num2
+    else:
+        print(&quot;Ugyldig operat&oslash;r!&quot;)
+        return
+
+    print(&quot;Resultatet er:&quot;, result)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+                </code>
+            </pre>
+        </div>
+
+
+
+    </section>
+</main>
+
+<footer>
+    <!-- ... Your footer content ... -->
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+</body>
+</html>

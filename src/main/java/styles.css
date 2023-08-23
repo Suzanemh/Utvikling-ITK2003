@@ -75,12 +75,12 @@ footer {
     background-color: #3498db;
     color: #ffffff;
 }
-.week{
+.kjerneelementer{
     margin-bottom:40px;
 }
 
 /* Legg til en skillelinje */
-.week:last-child {
+.kjerneelementer:last-child {
     border-bottom: 2px solid #3498db;
     padding-bottom: 20px;
 }
@@ -154,4 +154,24 @@ footer {
 /*----------------------
     End of Navbar
 ----------------------*/
+
+/*--
+kode snutt
+ */
+
+
+.language-html {
+    background-color: white !important;
+}
+
+.container-accessibility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+
 
