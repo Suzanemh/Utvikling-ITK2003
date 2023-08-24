@@ -125,9 +125,9 @@ footer {
 }
 
 .Logo img {
-    border-radius: 50%;
+    border-radius: 100%;
     transition: 1s;
-    width: 6vh;
+    width: 80px;
 }
 
 .Logo a {
