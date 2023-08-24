@@ -19,37 +19,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation */
-.Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #ffffff;
-}
-
-.Logo img {
-    height: 40px;
-}
-
-#Navbar-ul {
-    list-style: none;
-    display: flex;
-}
-
-.Navbar-Links {
-    margin-right: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#Navbar-Drop-Down {
-    display: none;
-}
-
-
 
 /* Main Content */
 .kjerneelementer {
@@ -111,76 +80,58 @@ footer {
 /*End of footer*/
 
 
-
 /*----------------------
     Start of Navbar
 ----------------------*/
 .Navbar {
-    align-items: center;
-    background-color: white;
     display: flex;
-    height: 7vh;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-.Logo {
-    margin-left: 10%;
-    white-space: nowrap;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: deeppink;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .Logo img {
-    border-radius: 100%;
-    transition: 1s;
-    width: 80px;
-}
-
-.Logo a {
-    align-items: center;
-    border-radius: 50px;
-    color: black;
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: 800;
-    padding-right: 18px;
-    text-decoration: none;
-    transition: background-color 0.6s ease-in-out, color 0.3s ease-in-out;
+    height: 50px;
 }
 
 #Navbar-ul {
-    margin-right: 10%;
-}
-.Navbar li {
-    display: inline-block;
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .Navbar-Links {
-    border-radius: 20px;
-    color: black;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 8px 12px;
+    margin-right: 20px;
+    color: #ffffff;
     text-decoration: none;
-    transition: background-color 0.6s ease, color 0.3s;
-}
-.Navbar-Links:hover {
-    background-color: blue;
-    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.Navbar-Links.active {
-    background-color: blue;
-    color: white;
+.Navbar-Links:hover {
+    color: lightblue;
 }
+
 #Navbar-Drop-Down {
     display: none;
+    cursor: pointer;
+    transition: transform 0.1s;
 }
-/*----------------------
-    End of Navbar
-----------------------*/
+
+.Navbar:hover #Navbar-Drop-Down {
+    transform: rotate(90deg);
+}
+/* End of navigation */
+
+
+
+
+
+
 
 /*--
 kode snutt
