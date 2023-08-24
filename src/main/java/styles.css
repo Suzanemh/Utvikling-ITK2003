@@ -222,6 +222,22 @@ kode snutt
     margin-top: 20px;
 }
 
+/*UkeX*/
+.next-week-link {
+    display: block;
+    margin: 20px 5px 5px 20px;
+    color: black; /* Set link color */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right; /* Align the link to the right side */
+}
+
+.next-week-link i {
+    margin-left: 5px;/* Space between text and icon */
+}
+
+
+
 
 
 
