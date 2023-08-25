@@ -4,21 +4,20 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
+h1, h2, h3, p{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
 
 /* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-}
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Main Content */
 .kjerneelementer {
@@ -73,7 +72,7 @@ body {
 footer {
     padding: 10px;
     margin:320px 0px 0px 0px;
-    background-color: cornflowerblue;
+    background-color: #3498db;
     color: #ffffff;
     position: sticky;
 }
@@ -89,8 +88,7 @@ footer {
     align-items: center;
     padding: 10px 20px;
     background-color: #3498db;
-    color: deeppink;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .Logo img {
@@ -128,34 +126,6 @@ footer {
 /* End of navigation */
 
 
-
-
-
-
-
-/*--
-kode snutt
- */
-
-
-.language-html {
-    background-color: white !important;
-}
-
-.container-accessibility {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-    flex-wrap: wrap;
-}
-
-/* Stil for rulling av koden */
-.code-scroll {
-    max-height: 300px; /* Juster denne verdien etter behov */
-    overflow-y: auto;
-}
-
 /* Style for the front page */
 .logo {
     display: flex;
@@ -172,6 +142,23 @@ kode snutt
 }
 
 /* end of logo */
+
+
+
+/*UkeX*/
+
+.next-week-link i {
+    margin-left: 5px;/* Space between text and icon */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #uke34 h1 {
     margin-top: 100px;
 }
@@ -180,24 +167,29 @@ kode snutt
     margin-top: 20px;
 }
 
-/*UkeX*/
-.next-week-link {
-    display: block;
-    margin: 20px 5px 5px 20px;
-    color: black; /* Set link color */
-    text-decoration: none;
-    font-weight: bold;
-    text-align: right; /* Align the link to the right side */
+.language-html {
+    background-color: white !important;
 }
 
-.next-week-link i {
-    margin-left: 5px;/* Space between text and icon */
+.container-accessibility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
 }
+/* Stil for rulling av koden */
+.code-scroll {
+    max-height: 300px; /* Juster denne verdien etter behov */
+    overflow-y: auto;
+}
+
+/*ukex end*/
+
+
 
 
 /*Oversikt.html */
-
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -238,7 +230,6 @@ kode snutt
 .week-button:hover {
     background-color: #2980b9;
 }
-
 
 /*End oversikt.html*/
 
