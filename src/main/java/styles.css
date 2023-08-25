@@ -177,14 +177,21 @@ footer {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 #uke34 h1 {
-    margin-top: 100px;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #uke34 h2 {
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+
 
 .language-html {
     background-color: white !important;
