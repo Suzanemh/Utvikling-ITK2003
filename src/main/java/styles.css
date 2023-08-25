@@ -145,11 +145,30 @@ footer {
 
 
 
-/*UkeX*/
-
-.next-week-link i {
-    margin-left: 5px;/* Space between text and icon */
+/* Link styling */
+.next-week-link {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF; /* Juster fargen etter ditt design */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: color 0.3s ease;
 }
+
+.next-week-link:hover {
+    color: #0056b3; /* Juster fargen ved hover */
+}
+
+/* Icon styling */
+.next-week-link .icon {
+    font-size: 16px; /* Juster ikonstørrelsen etter behov */
+    margin-left: 5px; /* Juster avstanden mellom teksten og ikonet */
+}
+
+/* Link styling End*/
+/*UkeX*/
 
 .container {
     max-width: 900px;
