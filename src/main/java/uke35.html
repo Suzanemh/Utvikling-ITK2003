@@ -2,9 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Uke35</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uke 35</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+
 </head>
 <body>
+<nav class="Navbar">
+    <div class="Logo">
+        <a href="index.html"><img src="img/java.png" alt="Logo"></a>
+    </div>
+    <ul id="Navbar-ul">
+        <li><a class="Navbar-Links" href="oversikt.html">Oversikt</a></li>
+        <li><a class="Navbar-Links" href="generellInfo.html">Generell info</a></li>
+    </ul>
+    <img id="Navbar-Drop-Down" src="img/three-horizontal-lines.svg" alt="">
+</nav>
 
+<main>
+    <section id="uke35">
+       <h1>Uke 35 </h1>
+        <h2>Enkel kalkulator</h2>
+        <p>Skriv et Python-program som tar inn to tall fra brukeren og utfører en av de fire
+            grunnleggende regneoperasjonene
+            (addisjon, subtraksjon, multiplikasjon eller divisjon) på tallene.
+            Programmet skal deretter skrive ut resultatet.</p>
+
+
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+                <code class="language-python" >
+# -*- coding: utf-8 -*-
+def main():
+    num1=float(input("Skriv inn det første tallet: "))
+    operator = input("Skriv inn operatoren(+ - * /): ")
+    num2=float(input("Skriv inn det andre tallet: "))
+
+    if operator == "+":
+        result = num1 + num2
+    elif operator == "-":
+        result = num1 - num2
+    elif operator == "*":
+        result = num1 * num2
+    elif operator == "/":
+        result = num1 / num2
+    else:
+        print("ugyldig operator")
+        return
+    print("Resultatet er: " , result)
+
+main()
+
+
+
+                </code>
+            </pre>
+        </div>
+
+        <p>Samme oppgave på nytt, men denne gangen med språket Java.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+                <code class="language-java">
+        import java.util.Scanner;
+
+        public class kalkulator {
+        public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Skriv inn det første tallet: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Skriv inn operatøren (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+
+        System.out.print("Skriv inn det andre tallet: ");
+        double num2 = scanner.nextDouble();
+
+        double result = 0;
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                result = num1 / num2;
+                break;
+            default:
+                System.out.println("Ugyldig operatør!");
+        }
+
+        System.out.println("Resultatet er: " + result);
+    }
+}
+                </code>
+            </pre>
+        </div>
+
+        <div class="next-week-link">
+            <span class="link-text">Gå til Uke 36</span>
+            <i class="icon fa fa-arrow-right"></i>
+        </div>
+
+
+
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 Suzane. Alle rettigheter reservert.</p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+<script src="prism.js"></script>
 </body>
 </html>
