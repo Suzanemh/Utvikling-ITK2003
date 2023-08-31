@@ -193,11 +193,6 @@ footer {
 }
 
 
-
-.language-html {
-    background-color: white !important;
-}
-
 .container-accessibility {
     display: flex;
     justify-content: center;
@@ -209,6 +204,7 @@ footer {
 .code-scroll {
     max-height: 300px; /* Juster denne verdien etter behov */
     overflow-y: auto;
+    background-color: white !important;
 }
 
 /*ukex end*/

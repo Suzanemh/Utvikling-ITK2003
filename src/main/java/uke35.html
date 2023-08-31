@@ -71,41 +71,41 @@ main()
                 <code class="language-java">
         import java.util.Scanner;
 
-        public class kalkulator {
-        public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+            public class kalkulator {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Skriv inn det første tallet: ");
-        double num1 = scanner.nextDouble();
+                    System.out.print("Skriv inn det første tallet: ");
+                    double num1 = scanner.nextDouble();
 
-        System.out.print("Skriv inn operatøren (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
+                    System.out.print("Skriv inn operatøren (+, -, *, /): ");
+                    char operator = scanner.next().charAt(0);
 
-        System.out.print("Skriv inn det andre tallet: ");
-        double num2 = scanner.nextDouble();
+                    System.out.print("Skriv inn det andre tallet: ");
+                    double num2 = scanner.nextDouble();
 
-        double result = 0;
+                    double result = 0;
 
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default:
-                System.out.println("Ugyldig operatør!");
-        }
+                    switch (operator) {
+                        case '+':
+                            result = num1 + num2;
+                            break;
+                        case '-':
+                            result = num1 - num2;
+                            break;
+                        case '*':
+                            result = num1 * num2;
+                            break;
+                        case '/':
+                            result = num1 / num2;
+                            break;
+                        default:
+                            System.out.println("Ugyldig operatør!");
+                    }
 
-        System.out.println("Resultatet er: " + result);
-    }
-}
+                    System.out.println("Resultatet er: " + result);
+                }
+            }
                 </code>
             </pre>
         </div>
