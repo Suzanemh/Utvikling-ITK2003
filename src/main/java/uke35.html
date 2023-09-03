@@ -209,12 +209,11 @@ main()
     </pre>
         </div>
 
-        <div class="next-week-link">
+
+        <div class="next-week-link" id="week-link">
             <span class="link-text">Gå til Uke 36</span>
             <i class="icon fa fa-arrow-right"></i>
         </div>
-
-
 
     </section>
 </main>
@@ -224,10 +223,24 @@ main()
     <p>&copy; 2023 Suzane. Alle rettigheter reservert.</p>
 </footer>
 
+<script>
+    // Hent elementet med id "week-link"
+    var weekLink = document.getElementById("week-link");
+
+    // Legg til en klikk-lytter som vil utføre en handling når brukeren klikker på lenken
+    weekLink.addEventListener("click", function() {
+        // Her kan du definere URL-en eller handlingen som skal utføres når lenken klikkes
+        // For eksempel:
+        window.location.href = "uke36.html"; // Bytt ut "uke36.html" med den ønskede URL-en
+    });
+</script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-html.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 <script src="prism.js"></script>
+
 </body>
 </html>

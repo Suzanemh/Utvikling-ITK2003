@@ -150,7 +150,6 @@ footer {
 .next-week-link {
     margin-top: 20px;
     text-decoration: none;
-    color: #007BFF; /* Juster fargen etter ditt design */
     font-weight: bold;
     display: flex;
     align-items: center;
