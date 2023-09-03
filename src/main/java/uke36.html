@@ -72,48 +72,32 @@
             </pre>
         </div>
 
-        <h2>Oppgave 2: Enkel velkomstmelding</h2>
-        <p>Skriv en kode slik at den viser en enkel velkomstmelding når knappen trykkes.</p>
+        <h2>Oppgave 2: Endre bakgrunnsfarge</h2>
+        <p>Legg til en funksjon i JavaScript som endrer bakgrunnsfargen til nettsiden
+            når knappen trykkes. Du kan for eksempel bruke forskjellige fargenavn
+            som "red", "blue", "green", osv.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
-                <code class="language-java">
-        import java.util.Scanner;
+                <code class="language-html">
+        &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-            public class kalkulator {
-                public static void main(String[] args) {
-                    Scanner scanner = new Scanner(System.in);
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;script type="application/javascript"&gt;
+        function endreBakgrunnsfarge(farge) {
+            document.body.style.backgroundColor = farge;
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
 
-                    System.out.print("Skriv inn det første tallet: ");
-                    double num1 = scanner.nextDouble();
+&lt;body&gt;
+    &lt;button onclick="endreBakgrunnsfarge('blue')"&gt;Blå bakgrunn&lt;/button&gt;
+    &lt;button onclick="endreBakgrunnsfarge('red')"&gt;Rød bakgrunn&lt;/button&gt;
+&lt;/body&gt;
 
-                    System.out.print("Skriv inn operatøren (+, -, *, /): ");
-                    char operator = scanner.next().charAt(0);
-
-                    System.out.print("Skriv inn det andre tallet: ");
-                    double num2 = scanner.nextDouble();
-
-                    double result = 0;
-
-                    switch (operator) {
-                        case '+':
-                            result = num1 + num2;
-                            break;
-                        case '-':
-                            result = num1 - num2;
-                            break;
-                        case '*':
-                            result = num1 * num2;
-                            break;
-                        case '/':
-                            result = num1 / num2;
-                            break;
-                        default:
-                            System.out.println("Ugyldig operatør!");
-                    }
-
-                    System.out.println("Resultatet er: " + result);
-                }
-            }
+&lt;/html&gt;
                 </code>
             </pre>
         </div>
@@ -150,36 +134,48 @@
         </div>
 
 
-        <h2>Oppgave 3: Flere meldinger</h2>
-        <p>Endre koden slik at når brukeren trykker på knappen, blir det vist to meldinger. Den første meldingen
-            skal være "Velkommen!" og den andre meldingen skal være den nåværende tiden i
-            formatet "Klokken er [Time:NåværendeMinutt]".</p>
+        <h2>Oppgave 3: Bytte bilder</h2>
+        <p>Lag en HTML-side med to bilder og en knapp. Lag deretter en JavaScript-funksjon
+            som bytter bildene hver gang knappen trykkes. Start med det første bildet synlig,
+            og når knappen trykkes første gang, skal det første bildet skjules og det andre bildet vises.
+            Trykk deretter på knappen igjen for å bytte tilbake.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-html">
-             &lt;!DOCTYPE html&gt;
-            &lt;html lang="en"&gt;
+            &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-            &lt;head&gt;
-                &lt;meta charset="UTF-8"&gt;
-                &lt;title&gt;Title&lt;/title&gt;
-                &lt;script type="application/javascript"&gt;
-                    function visVelkomst() {
-                        document.write("Velkommen!<br>");
-                        var nå = new Date();
-                        var time = nå.getHours();
-                        var minutt = nå.getMinutes();
-                        document.write("Klokken er " + time + ":" + minutt);
-                    }
-                &lt;/script&gt;
-            &lt;/head&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Bytte Bilder&lt;/title&gt;
+    &lt;script type="application/javascript"&gt;
+        var visBilde1 = true;
 
-            &lt;body&gt;
-                &lt;button onclick="visVelkomst()"&gt;Trykk meg&lt;/button&gt;
-            &lt;/body&gt;
+        function byttBilder() {
+            var bilde1 = document.getElementById("bilde1");
+            var bilde2 = document.getElementById("bilde2");
 
-            &lt;/html&gt;
+            if (visBilde1) {
+                bilde1.style.display = "none";
+                bilde2.style.display = "block";
+            } else {
+                bilde1.style.display = "block";
+                bilde2.style.display = "none";
+            }
+
+            visBilde1 = !visBilde1;
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;img id="bilde1" src="bilde1.jpg" alt="Bilde 1"&gt;
+    &lt;img id="bilde2" src="bilde2.jpg" alt="Bilde 2" style="display: none;"&gt;
+    &lt;button onclick="byttBilder()"&gt;Bytt Bilder&lt;/button&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
         </code>
     </pre>
         </div>
