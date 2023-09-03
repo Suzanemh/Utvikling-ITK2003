@@ -181,34 +181,32 @@
         </div>
 
 
-        <h2>Oppgave 4: Tallmultiplikasjon</h2>
-        <p>Legg til et input-felt i HTML-koden der brukeren kan skrive inn et tall.
-            Endre JavaScript-funksjonen slik at den multipliserer tallet brukeren
-            skrev inn med 5 og viser resultatet i et popup-vindu når knappen trykkes.</p>
+        <h2>Oppgave 4: Generere tilfeldige tall</h2>
+        <p>Lag en JavaScript-funksjon som genererer og viser et tilfeldig heltall mellom 1 og 100 når
+            en knapp trykkes. Bruk Math.random()-funksjonen til å generere tallet.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-html">
              &lt;!DOCTYPE html&gt;
-            &lt;html lang="en"&gt;
+&lt;html lang="en"&gt;
 
-            &lt;head&gt;
-                &lt;meta charset="UTF-8"&gt;
-                &lt;title&gt;Title&lt;/title&gt;
-                &lt;script type="application/javascript"&gt;
-                    function multipliserMedFem() {
-                        var inputTall = prompt("Skriv inn et tall:");
-                        var resultat = parseFloat(inputTall) * 5;
-                        alert("Resultatet er: " + resultat);
-                    }
-                &lt;/script&gt;
-            &lt;/head&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Tilfeldig Tall Generator&lt;/title&gt;
+    &lt;script type="application/javascript"&gt;
+        function genererTilfeldigTall() {
+            var tilfeldigTall = Math.floor(Math.random() * 100) + 1;
+            alert("Det tilfeldige tallet er: " + tilfeldigTall);
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
 
-            &lt;body&gt;
-                &lt;button onclick="multipliserMedFem()"&gt;Trykk meg&lt;/button&gt;
-            &lt;/body&gt;
+&lt;body&gt;
+    &lt;button onclick="genererTilfeldigTall()"&gt;Generer Tilfeldig Tall&lt;/button&gt;
+&lt;/body&gt;
 
-            &lt;/html&gt;
+&lt;/html&gt;
         </code>
     </pre>
         </div>
