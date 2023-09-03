@@ -12,6 +12,233 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uke 36</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="themes/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="Navbar">
+    <div class="Logo">
+        <a href="index.html"><img src="img/java.png" alt="Logo"></a>
+    </div>
+    <ul id="Navbar-ul">
+        <li><a class="Navbar-Links" href="oversikt.html">Oversikt</a></li>
+        <li><a class="Navbar-Links" href="generellInfo.html">Generell info</a></li>
+    </ul>
+    <img id="Navbar-Drop-Down" src="img/three-horizontal-lines.svg" alt="">
+</nav>
+
+<main>
+    <section id="uke">
+        <h1>Uke 36 </h1>
+        <h2>Oppgave 1: Enkel velkomstmelding</h2>
+        <p>Skriv en kode slik at den viser en enkel velkomstmelding når knappen trykkes.</p>
+
+
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+                <code class="language-html" >
+&lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+        &lt;script type="application/javascript"&gt;
+            function visVelkomst() {
+                document.write("Velkommen til vår nettside!");
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;button onclick="visVelkomst()"&gt;Trykk meg&lt;/button&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+
+                </code>
+            </pre>
+        </div>
+
+        <h2>Oppgave 2: Enkel velkomstmelding</h2>
+        <p>Skriv en kode slik at den viser en enkel velkomstmelding når knappen trykkes.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+                <code class="language-java">
+        import java.util.Scanner;
+
+            public class kalkulator {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+
+                    System.out.print("Skriv inn det første tallet: ");
+                    double num1 = scanner.nextDouble();
+
+                    System.out.print("Skriv inn operatøren (+, -, *, /): ");
+                    char operator = scanner.next().charAt(0);
+
+                    System.out.print("Skriv inn det andre tallet: ");
+                    double num2 = scanner.nextDouble();
+
+                    double result = 0;
+
+                    switch (operator) {
+                        case '+':
+                            result = num1 + num2;
+                            break;
+                        case '-':
+                            result = num1 - num2;
+                            break;
+                        case '*':
+                            result = num1 * num2;
+                            break;
+                        case '/':
+                            result = num1 / num2;
+                            break;
+                        default:
+                            System.out.println("Ugyldig operatør!");
+                    }
+
+                    System.out.println("Resultatet er: " + result);
+                }
+            }
+                </code>
+            </pre>
+        </div>
+
+
+        <h2>Oppgave 2: Funksjonell melding</h2>
+        <p>Skriv en funksjon  visMelding som tar imot navnet ditt som argument og viser
+            en melding på følgende format: "Hei, [Navnet ditt]! Velkommen til HTML og JavaScript-introduksjon."</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Title&lt;/title&gt;
+                &lt;script type="application/javascript"&gt;
+                    function visMelding(navn) {
+                        document.write("Hei, " + navn + "!
+                        Velkommen til HTML og JavaScript-introduksjon.");
+                    }
+                &lt;/script&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+                &lt;button onclick="visMelding('DittNavn')"&gt;Trykk meg&lt;/button&gt;
+            &lt;/body&gt;
+
+            &lt;/html&gt;
+        </code>
+    </pre>
+        </div>
+
+
+        <h2>Oppgave 3: Flere meldinger</h2>
+        <p>Endre koden slik at når brukeren trykker på knappen, blir det vist to meldinger. Den første meldingen
+            skal være "Velkommen!" og den andre meldingen skal være den nåværende tiden i
+            formatet "Klokken er [Time:NåværendeMinutt]".</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+             &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Title&lt;/title&gt;
+                &lt;script type="application/javascript"&gt;
+                    function visVelkomst() {
+                        document.write("Velkommen!<br>");
+                        var nå = new Date();
+                        var time = nå.getHours();
+                        var minutt = nå.getMinutes();
+                        document.write("Klokken er " + time + ":" + minutt);
+                    }
+                &lt;/script&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+                &lt;button onclick="visVelkomst()"&gt;Trykk meg&lt;/button&gt;
+            &lt;/body&gt;
+
+            &lt;/html&gt;
+        </code>
+    </pre>
+        </div>
+
+
+        <h2>Oppgave 4: Tallmultiplikasjon</h2>
+        <p>Legg til et input-felt i HTML-koden der brukeren kan skrive inn et tall.
+            Endre JavaScript-funksjonen slik at den multipliserer tallet brukeren
+            skrev inn med 5 og viser resultatet i et popup-vindu når knappen trykkes.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+             &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Title&lt;/title&gt;
+                &lt;script type="application/javascript"&gt;
+                    function multipliserMedFem() {
+                        var inputTall = prompt("Skriv inn et tall:");
+                        var resultat = parseFloat(inputTall) * 5;
+                        alert("Resultatet er: " + resultat);
+                    }
+                &lt;/script&gt;
+            &lt;/head&gt;
+
+            &lt;body&gt;
+                &lt;button onclick="multipliserMedFem()"&gt;Trykk meg&lt;/button&gt;
+            &lt;/body&gt;
+
+            &lt;/html&gt;
+        </code>
+    </pre>
+        </div>
+
+        <div class="next-week-link">
+            <span class="link-text">Gå til Uke 37</span>
+            <i class="icon fa fa-arrow-right"></i>
+        </div>
+
+
+
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 Suzane. Alle rettigheter reservert.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-html.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+<script src="prism.js"></script>
+</body>
+</html>
 
 </body>
 </html>
