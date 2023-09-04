@@ -211,6 +211,69 @@
     </pre>
         </div>
 
+        <h2>Oppgave 5: Fargeendring med knapp</h2>
+        <p>Lag en nettside som inneholder en firkantig div med en knapp ved siden av den.
+        Når brukeren klikker på knappen, skal bakgrunnsfargen til div endre seg til en tilfeldig farge.
+            Bruk id for å identifisere både div og knappen. Funksjonen skal hentes ved hjelp av getElementById.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Fargeendring med knapp&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="firkant" style="width: 100px; height: 100px; background-color: red;"&gt;&lt;/div&gt;
+    &lt;button id="endreFargeKnapp"&gt;Endre Farge&lt;/button&gt;
+
+    &lt;script&gt;
+        function endreFarge() {
+            var firkant = document.getElementById("firkant");
+            var farger = ["red", "blue", "green", "orange", "purple"];
+            var tilfeldigFarge = farger[Math.floor(Math.random() * farger.length)];
+            firkant.style.backgroundColor = tilfeldigFarge;
+        }
+
+        var endreFargeKnapp = document.getElementById("endreFargeKnapp");
+        endreFargeKnapp.addEventListener("click", endreFarge);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </pre>
+        </div>
+
+                <h2>Oppgave 6: Teller med knapper</h2>
+                <p>Lag en nettside med en div som viser en teller som starter på 0.
+                    Legg til to knapper ved siden av telleren: én for å øke telleren med 1, og én for å redusere den med 1.
+                    Bruk id for å identifisere div og begge knappene.
+                        Implementer funksjoner ved hjelp av getElementById for å oppdatere telleren når knappene klikkes.</p>
+                            <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+
+        </code>
+    </pre>
+                            </div>
+
+        <h2>Oppgave 7: Tekstendring med knapp</h2>
+        <p>Lag en nettside med en <p>-tagg som viser en initiell tekst.
+        Ved siden av <p>-taggen, legg til en knapp.
+        Når knappen klikkes, skal teksten i <p>-taggen endres til en tilfeldig generert tekststreng fra en offentlig tekstgenerator-API.
+        Bruk id for å identifisere både <p>-taggen og knappen.
+        Implementer JavaScript-koden som bruker fetch for å hente tilfeldig tekst fra API-et og oppdatere <p>-taggen med den nye teksten.
+        Husk å deaktivere knappen mens teksten hentes, og aktiver den igjen etterpå for å forhindre flere forespørsler til API-et samtidig.</p>
+                                <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+
+        </code>
+    </pre>
+                                </div>
         <div class="next-week-link">
             <span class="link-text">Gå til Uke 37</span>
             <i class="icon fa fa-arrow-right"></i>
