@@ -254,7 +254,38 @@
             <pre class="code-scroll">
 
         <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Teller med knapper&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="teller"&gt;0&lt;/div&gt;
+    &lt;button id="okningKnapp"&gt;Øk&lt;/button&gt;
+    &lt;button id="reduksjonKnapp"&gt;Reduser&lt;/button&gt;
 
+    &lt;script&gt;
+        var teller = 0;
+        var tellerElement = document.getElementById("teller");
+
+        function okTeller() {
+            teller++;
+            tellerElement.textContent = teller;
+        }
+
+        function reduserTeller() {
+            teller--;
+            tellerElement.textContent = teller;
+        }
+
+        var okningKnapp = document.getElementById("okningKnapp");
+        var reduksjonKnapp = document.getElementById("reduksjonKnapp");
+
+        okningKnapp.addEventListener("click", okTeller);
+        reduksjonKnapp.addEventListener("click", reduserTeller);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
         </code>
     </pre>
                             </div>
