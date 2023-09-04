@@ -301,7 +301,44 @@
             <pre class="code-scroll">
 
         <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Tekstendring med knapp (API)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="tekstParagraf"&gt;Klikk på knappen for å generere tilfeldig tekst.&lt;/p&gt;
+    &lt;button id="endreTekstKnapp"&gt;Endre Tekst&lt;/button&gt;
 
+    &lt;script&gt;
+        function hentTilfeldigTekst() {
+            var tekstParagraf = document.getElementById("tekstParagraf");
+            var endreTekstKnapp = document.getElementById("endreTekstKnapp");
+
+            // Deaktiver knappen mens du henter tekst fra API-et.
+            endreTekstKnapp.disabled = true;
+
+            // Hent tekst fra Lorem Ipsum API.
+            fetch('https://baconipsum.com/api/?type=meat-and-filler')
+                .then(response => response.json())
+                .then(data => {
+                    // Bruk den første tekststrengen fra API-responsen.
+                    tekstParagraf.textContent = data[0];
+                })
+                .catch(error => {
+                    console.error('Feil ved henting av tekst:', error);
+                })
+                .finally(() => {
+                    // Aktiver knappen igjen etter at teksten er hentet.
+                    endreTekstKnapp.disabled = false;
+                });
+        }
+
+        var endreTekstKnapp = document.getElementById("endreTekstKnapp");
+        endreTekstKnapp.addEventListener("click", hentTilfeldigTekst);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
         </code>
     </pre>
                                 </div>
