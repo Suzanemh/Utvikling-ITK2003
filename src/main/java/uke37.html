@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
     <link href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css" rel="stylesheet">
 
+
 </head>
 <body>
 <nav class="Navbar">
@@ -38,7 +39,6 @@
         <div class="container-accessibility">
             <pre class="code-scroll">
                 <code class="language-html" >
-
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 
@@ -115,74 +115,94 @@
 
 
 
-        <h2>Oppgave 3:</h2>
+        <h2>Oppgave 3: Arrays</h2>
         <p>Lag en liste kalt frukt med navnene på tre frukter. Bruk console.log() for å vise hele listen og den første
             frukten i listen.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
+        <code class="language-javascript">
+var fruits = ["Apple", "Banana", "Orange"];
 
-        <code class="language-html">
-        </code>
+console.log("Fruits array: " + fruits);
+console.log("First fruit: " + fruits[0]);
+    </code>
     </pre>
         </div>
 
 
-        <h2>Oppgave 4: </h2>
+        <h2>Oppgave 4: Conditional statements </h2>
         <p>Lag et JavaScript-program som sjekker om et gitt tall er partall eller oddetall, og viser en melding ved hjelp av console.log().
             For eksempel, hvis tallet er 6, skal utskriften være "6 er et partall."</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
-
-        <code class="language-html">
-
-        </code>
+        <code class="language-javascript">
+        var userName = prompt("Enter your name:");
+        console.log("Welcome, " + userName + "!");
+    </code></pre>
+    </code>
     </pre>
         </div>
 
-        <h2>Oppgave 5: </h2>
+        <h2>Oppgave 5: Bruker input </h2>
         <p>Skriv et program som ber brukeren om å skrive inn navnet sitt ved hjelp av prompt().
             Bruk deretter console.log() for å vise en velkomstmelding med brukerens navn.</p>
         <div class="container-accessibility">
-            <pre class="code-scroll">
+           <pre class="code-scroll">
+        <code class="language-javascript">
+            var userName = prompt("Enter your name:");
+            console.log("Welcome, " + userName + "!");
 
-        <code class="language-html">
-
-
-        </code>
+    </code>
     </pre>
         </div>
 
-        <h2>Oppgave 6: </h2>
+
+        <h2>Oppgave 6: Løkke </h2>
         <p>Lag et JavaScript-program som bruker en løkke for å vise tallene fra 1 til 10 på separate linjer ved hjelp av console.log().</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
+        <code class="language-javascript">
+        for (var i = 1; i <= 10; i++) {
+            console.log(i);
+        }
 
-        <code class="language-html">
-
-        </code>
+    </code>
     </pre>
         </div>
 
-        <h2>Oppgave 7: </h2>
+        <h2>Oppgave 7:Funksjoner </h2>
         <p>Definer en funksjon kalt multipliser som tar to tall som parametere og returnerer produktet deres.
             Bruk console.log() for å vise resultatet av å multiplisere 5 og 3 ved hjelp av denne funksjonen.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
+        <code class="language-javascript">
+        function multiply(a, b) {
+            return a * b;
+        }
 
-        <code class="language-html">
+        console.log("Result: " + multiply(5, 3));
 
-        </code>
+    </code>
     </pre>
         </div>
 
-        <h2>Oppgave 8: </h2>
+        <h2>Oppgave 8: Objekter</h2>
         <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
+        <code class="language-javascript">
+            var student = {
+                name: "John",
+                age: 17,
+                grade: 11
+            };
 
-        <code class="language-html">
+            console.log("Student Information:");
+            console.log("Name: " + student.name);
+            console.log("Age: " + student.age);
+            console.log("Grade: " + student.grade);
 
-        </code>
+    </code>
     </pre>
         </div>
 
@@ -216,7 +236,7 @@
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-html.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+
 <script src="prism.js"></script>
 </body>
 </html>
