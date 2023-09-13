@@ -39,9 +39,36 @@
             <pre class="code-scroll">
                 <code class="language-html" >
 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-                </code>
-            </pre>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Vitenskapelige Fakta&lt;/title&gt;
+    &lt;script type="application/javascript"&gt;
+        function hentVitenskapeligFakta() {
+            const tekstTagg = document.getElementById("vitenskapeligFakta");
+            fetch('https://uselessfacts.jsph.pl/random.json?language=en')
+                .then(response => response.json())
+                .then(data => {
+                    tekstTagg.textContent = data.text;
+                })
+                .catch(error => {
+                    console.error('Feil ved henting av data: ', error);
+                });
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p id="vitenskapeligFakta"&gt;Klikk på knappen for å få et vitenskapelig faktum.&lt;/p&gt;
+    &lt;button onclick="hentVitenskapeligFakta()"&gt;Hent Faktum&lt;/button&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code></pre>
+
+
         </div>
 
         <h2>Oppgave 2: API for inspirenrende sitater </h2>
@@ -53,7 +80,33 @@
         <div class="container-accessibility">
             <pre class="code-scroll">
                 <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Inspirerende Sitater&lt;/title&gt;
+    &lt;script type="application/javascript"&gt;
+        function hentInspirerendeSitat() {
+            const tekstTagg = document.getElementById("inspirerendeSitat");
+            fetch('https://api.quotable.io/random')
+                .then(response => response.json())
+                .then(data => {
+                    tekstTagg.textContent = data.content;
+                })
+                .catch(error => {
+                    console.error('Feil ved henting av data: ', error);
+                });
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="inspirerendeSitat"&gt;Klikk på knappen for å få et inspirerende sitat.&lt;/p&gt;
+    &lt;button onclick="hentInspirerendeSitat()"&gt;Hent Sitat&lt;/button&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code></pre>
                 </code>
             </pre>
         </div>
@@ -63,7 +116,8 @@
 
 
         <h2>Oppgave 3:</h2>
-        <p></p>
+        <p>Lag en liste kalt frukt med navnene på tre frukter. Bruk console.log() for å vise hele listen og den første
+            frukten i listen.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
@@ -74,7 +128,8 @@
 
 
         <h2>Oppgave 4: </h2>
-        <p></p>
+        <p>Lag et JavaScript-program som sjekker om et gitt tall er partall eller oddetall, og viser en melding ved hjelp av console.log().
+            For eksempel, hvis tallet er 6, skal utskriften være "6 er et partall."</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
@@ -85,7 +140,8 @@
         </div>
 
         <h2>Oppgave 5: </h2>
-        <p></p>
+        <p>Skriv et program som ber brukeren om å skrive inn navnet sitt ved hjelp av prompt().
+            Bruk deretter console.log() for å vise en velkomstmelding med brukerens navn.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
@@ -97,7 +153,7 @@
         </div>
 
         <h2>Oppgave 6: </h2>
-        <p></p>
+        <p>Lag et JavaScript-program som bruker en løkke for å vise tallene fra 1 til 10 på separate linjer ved hjelp av console.log().</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
@@ -108,7 +164,19 @@
         </div>
 
         <h2>Oppgave 7: </h2>
-        <p></p>
+        <p>Definer en funksjon kalt multipliser som tar to tall som parametere og returnerer produktet deres.
+            Bruk console.log() for å vise resultatet av å multiplisere 5 og 3 ved hjelp av denne funksjonen.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-html">
+
+        </code>
+    </pre>
+        </div>
+
+        <h2>Oppgave 8: </h2>
+        <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
