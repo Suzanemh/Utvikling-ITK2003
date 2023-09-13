@@ -265,6 +265,19 @@ footer {
     background-color: white !important;
 }
 
+.rund-boks {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 100px; /* Dette gir en rund boks */
+    background-color: #ff8c00; /* Knasj farge, kan endres til ønsket fargekode */
+    color: #000; /* Svart tekstfarge */
+    text-decoration: none !important;
+    max-width: fit-content;
+    font-family: cursive;
+
+}
+
 
 
 
