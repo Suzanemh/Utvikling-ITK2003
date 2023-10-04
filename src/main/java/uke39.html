@@ -28,56 +28,94 @@
 <main>
   <section id="uke">
 
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
+    <h2>Oppgave 1</h2>
+    <p>Lag en HTML-knapp som kaller en JavaScript-funksjon som viser "Hei verden" på en blank side via "document.write". Bruk hendelsen "onClick" på knappen.</p>
     <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
-
+            function heiVerden(){
+            document.write("Hei verden");
     </code>
     </pre>
     </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
+    <h2>Oppgave 2</h2>
+    <p>Gjør om oppgave 1 til å vise en "alert"-boks når knappen trykkes.</p>
     <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
-
+    function heiVerdenAlert() {
+    alert("Hei verden");}
     </code>
     </pre>
     </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
+
+    <h2>Oppgave 3</h2>
+    <p>Lag et input-felt i en HTML-side. Lag et JavaScript som leser dataene fra input-feltet når det er endringer i feltet (hendelsen "onChange") og som skriver disse dataene ut på en blank side med "document.write". Funksjonen som kalles ved "onChange" skal ta en inn-parameter, som er verdien av input-feltet.</p>
     <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
-
+            function write(data){
+            document.write(data);}
     </code>
     </pre>
     </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
+
+    <h2>Oppgave 4</h2>
+    <p>Endre oppgave 3 ved å legge ut en "pop-up/alert"-boks som skal inneholde teksten fra input-feltet.</p>
     <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
-
+            function writeAlert(data) {
+            alert(data);}
     </code>
     </pre>
     </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
+
+    <h2>Oppgave 5</h2>
+    <p>Utvid oppgave 4 med å skrive informasjonen fra input-feltet til "console.log". Sjekk at dataene blir skrevet til loggen.</p>
     <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
-
+            function writeConsole(data) {
+            console.log(data);}
     </code>
     </pre>
     </div>
+
+
+    <h2>HTML innholdet for oppgave 1-5</h2>
+    <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-javascript">
+&lt;body&gt;
+    &lt;h2&gt;Oppgave 1&lt;/h2&gt;
+    &lt;button onClick="heiVerden();"&gt;Klikk meg for Oppgave 1!&lt;/button&gt;
+    &lt;h2&gt;Oppgave 2&lt;/h2&gt;
+    &lt;button onClick="heiVerdenAlert();"&gt;Klikk meg for Oppgave 2!&lt;/button&gt;
+    &lt;h2&gt;Oppgave 3&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;input onChange="write(this.value);" type="text" value=""/&gt;
+    &lt;/form&gt;
+    &lt;h2&gt;Oppgave 4&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;input onChange="writeAlert(this.value);" type="text" value=""/&gt;
+    &lt;/form&gt;
+    &lt;h2&gt;Oppgave 5&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;input onChange="writeConsole(this.value);" type="text" value=""/&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+</code>
+    </pre>
+    </div>
+
+
 
     <div class="next-week-link" id="week-link">
       <span class="link-text">Gå til Uke 39</span>
