@@ -28,13 +28,149 @@
 <main>
     <section id="uke">
         <h1 class="rund-boks">Uke 38 </h1>
-        <h2>Oppgave 8: Objekter</h2>
-        <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
+        <h2>Oppgave 1: Areal av en sirkel</h2>
+        <p>Lag et JavaScript-program som beregner arealet av en sirkel.
+            Be brukeren om å skrive inn radiusen til sirkelen ved hjelp av prompt().
+            Bruk en variabel til å lagre radiusen og en annen variabel til å lagre resultatet av beregningen.
+            Vis deretter resultatet ved hjelp av console.log().
+            Formelen for å beregne arealet av en sirkel er: A = π * r^2, der "A" er arealet og "r" er radiusen.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Beregn Sirkelens Areal&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+        // Be brukeren om å skrive inn radiusen
+        var radius = prompt("Skriv inn radiusen til sirkelen:");
+
+        // Beregn arealet av sirkelen
+        var pi = Math.PI;
+        var areal = pi * Math.pow(radius, 2);
+
+        // Vis resultatet
+        console.log("Arealet av sirkelen med radius " + radius + " er " + areal);
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code>
+    </pre>
+        </div>
+
+
+        <h2>Oppgave 2: Temperatur konvertering</h2>
+        <p>Lag et JavaScript-program som konverterer temperatur fra Celsius til Fahrenheit. Be brukeren om å skrive inn temperaturen i Celsius ved hjelp av prompt(). Bruk en variabel til å lagre temperaturen i Celsius og en annen variabel til å lagre resultatet av konverteringen til Fahrenheit. Vis deretter resultatet ved hjelp av console.log(). Formelen for å konvertere fra Celsius til Fahrenheit er: F = (C * 9/5) + 32, der "F" er temperaturen i Fahrenheit og "C" er temperaturen i Celsius.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Temperaturkonvertering&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+        // Funksjon for å konvertere fra Celsius til Fahrenheit
+        function celsiusTilFahrenheit(celsius) {
+            return (celsius * 9 / 5) + 32;
+        }
+
+        // Funksjon for å konvertere fra Fahrenheit til Celsius
+        function fahrenheitTilCelsius(fahrenheit) {
+            return (fahrenheit - 32) * 5 / 9;
+        }
+
+        // Temperatur i Celsius
+        var temperaturCelsius = 25;
+
+        // Konverter til Fahrenheit
+        var temperaturFahrenheit = celsiusTilFahrenheit(temperaturCelsius);
+
+        // Vis resultatene
+        console.log(temperaturCelsius + " grader Celsius tilsvarer " + temperaturFahrenheit + " grader Fahrenheit.");
+
+        // Temperatur i Fahrenheit
+        var temperaturFahrenheit2 = 77;
+
+        // Konverter til Celsius
+        var temperaturCelsius2 = fahrenheitTilCelsius(temperaturFahrenheit2);
+
+        // Vis resultatene
+        console.log(temperaturFahrenheit2 + " grader Fahrenheit tilsvarer " + temperaturCelsius2 + " grader Celsius.");
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code>
+    </pre>
+        </div>
+
+
+        <h2>Oppgave 3: Variabler og utdata i JavaSqript</h2>
+        <p>Lag en HTML-fil som inneholder JavaScript-kode for å presentere informasjon om en person.
+            Bruk følgende variabler:
+            <li>Navn med verdien "Line Jensen".</li>
+            <li>Alder med verdien 23.</li>
+            <li>Myndig med verdien true.</li>
+            <li>Høyde med verdien 1.80.</li>
+
+            Deretter, basert på disse variablene, skal du bygge en streng som inneholder følgende informasjon:
+
+            "Line Jensen er 23 år gammel og er myndig og har en høyde på 1.80."
+
+            Dette skal vises på følgende måter:
+
+            En pop-up dialogboks ved hjelp av alert().
+            Skriving til dokumentet ved hjelp av document.write().
+            Utlogging til konsollen ved hjelp av console.log().
+            Du må bruke betinget logikk for å sjekke om personen er myndig eller ikke, og inkludere denne informasjonen i teksten.
+
+            Lag HTML-filen og JavaScript-koden som oppfyller kravene i oppgaveteksten.</p>
+        <div class="container-accessibility">
+            <pre class="code-scroll">
+
+        <code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;JavaScript 1&lt;/title&gt;
+    &lt;script type="text/javascript"&gt;
+        const navn = "Line Jensen";
+        const alder = 23;
+        const myndig = true;
+        const hoyde = 1.80;
+        let ut = navn + " " + alder;
+        if (myndig) {
+            ut += " er myndig ";
+        } else {
+            ut += " er ikke myndig ";
+        }
+        ut += " og har en høyde på " + hoyde;
+        alert(ut);
+        document.write(ut);
+        console.log(ut);
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
     </code>
     </pre>
         </div>
@@ -52,44 +188,65 @@
         </div>
 
 
-        <h2>Oppgave 8: Objekter</h2>
-        <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
+        <h2>Oppgave 4: Flere funksjonaliteter</h2>
+        <p>Lag en HTML-fil som inneholder JavaScript-kode for å håndtere ulike hendelser. Bruk følgende funksjoner:
+
+           <li>nnKlikk(innData): Denne funksjonen skal kalles når brukeren endrer verdien i en tekstboks. Funksjonen skal ta inn dataen som er skrevet inn og vise en melding med denne informasjonen ved hjelp av alert().</li>
+
+            <li> klikkKnapp(): Denne funksjonen skal kalles når brukeren klikker på en knapp. Den skal vise en melding med teksten "Knappen er klikket!" ved hjelp av alert().</li>
+
+            <li>klikkDiv(): Denne funksjonen skal kalles når brukeren klikker på en div. Den skal vise to meldinger: "Div er klikket!" ved hjelp av alert(), og "Etter alert inne i kikkDiv!" ved hjelp av console.log().</li>
+
+        <li>endreFarge(): Denne funksjonen skal kalles når brukeren beveger musepekeren over en annen div. Den skal endre tekstens farge til blå når musepekeren er over div-elementet, og tilbake til svart når musepekeren beveger seg bort. Dette skal gjøres ved å endre CSS-stilen til div-elementet. </li>
+
+            Bruk HTML- og JavaScript-koden gitt i oppgaveteksten som utgangspunkt, og legg til de nødvendige hendelsesbehandlerne for å oppnå ønsket funksjonalitet. Test løsningen for å sikre at hendelsene behandles riktig.</p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
         <code class="language-javascript">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;JavaScript 1&lt;/title&gt;
+    &lt;script type="text/javascript"&gt;
+        function innKlikk(innData) {
+            let utData = "Du har skrevet inn følgende data: " + innData;
+            alert(utData);
+        }
+
+        function klikkKnapp() {
+            alert("Knappen er kikket!");
+        }
+
+        function klikkDiv() {
+            alert("Div er kikket!");
+            console.log("Etter alert inne i kikkDiv!");
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type="text" onchange="innKlikk(this.value);" /&gt;&lt;br /&gt;
+
+    &lt;input type="button" value="Trykk meg" onclick="klikkKnapp();" /&gt;
+
+    &lt;div onclick="klikkDiv();"&gt;Trykk meg&lt;/div&gt;
+
+    &lt;div onmouseover="style.color='blue';" onmouseout="style.color='black';"&gt;
+        Rør ved meg!
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
     </code>
     </pre>
         </div>
 
 
         <h2>Oppgave 8: Objekter</h2>
-        <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
-        <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-        </div>
-
-
-        <h2>Oppgave 8: Objekter</h2>
-        <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
-        <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-        </div>
-
-
-        <h2>Oppgave 8: Objekter</h2>
-        <p>Lag et objekt kalt student med egenskaper for studentens navn, alder og karakter. Bruk console.log() for å vise studentens informasjon.</p>
+        <p></p>
         <div class="container-accessibility">
             <pre class="code-scroll">
 
