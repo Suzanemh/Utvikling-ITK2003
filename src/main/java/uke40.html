@@ -1,23 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uke 40</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="css/prism.css">
-  <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="themes/prism.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css" rel="stylesheet">
+  <title>Fargerik Høstferie - Uke 40</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', 'Arial', sans-serif;
+      background: linear-gradient(45deg, #FFD700, #FF69B4, #00CED1, #FF8C00);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s infinite;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
 
+    .Navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .Logo img {
+      width: 50px;
+      height: auto;
+    }
+
+    #Navbar-ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .Navbar-Links {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    #Navbar-Drop-Down {
+      display: none;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    #content {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FFD700;
+      font-size: 48px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cccccc;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .vacation-message {
+      font-size: 28px;
+      font-weight: bold;
+      color: #FF69B4;
+      animation: rainbowAnimation 2s infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes rainbowAnimation {
+      0% {
+        color: #FF69B4;
+      }
+      25% {
+        color: #00CED1;
+      }
+      50% {
+        color: #FFD700;
+      }
+      75% {
+        color: #FF8C00;
+      }
+      100% {
+        color: #FF69B4;
+      }
+    }
+  </style>
 </head>
 <body>
+
 <nav class="Navbar">
-  <div class="Logo">
-    <a href="index.html"><img src="img/java.png" alt="Logo"></a>
-  </div>
+  
   <ul id="Navbar-ul">
     <li><a class="Navbar-Links" href="oversikt.html">Oversikt</a></li>
     <li><a class="Navbar-Links" href="generellInfo.html">Generell info</a></li>
@@ -25,71 +130,12 @@
   <img id="Navbar-Drop-Down" src="img/three-horizontal-lines.svg" alt="">
 </nav>
 
-<main>
-  <section id="uke">
+<div id="content">
+  <h1>Fargerik Høstferie - Uke 40</h1>
+  <div class="vacation-message">
+    <p>Ferieglede og regnbuefarger venter!</p>
+  </div>
+</div>
 
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
-    <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-    </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
-    <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-    </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
-    <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-    </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
-    <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-    </div>
-    <h2>Oppgave 8: Objekter</h2>
-    <p></p>
-    <div class="container-accessibility">
-            <pre class="code-scroll">
-
-        <code class="language-javascript">
-
-    </code>
-    </pre>
-    </div>
-
-    <div class="next-week-link" id="week-link">
-      <span class="link-text">Gå til Uke 39</span>
-      <i class="icon fa fa-arrow-right"></i>
-    </div>
-
-
-
-  </section>
-</main>
-
-
-<footer>
-  <p>&copy; 2023 Suzane. Alle rettigheter reservert.</p>
-</footer>
+</body>
+</html>
